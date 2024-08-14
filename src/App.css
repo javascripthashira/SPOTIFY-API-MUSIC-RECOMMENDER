@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 245, 244);
+  color: #000000;
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Helvetica, Arial;
+  font-size: 3vmin;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.background {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 1700px;
+}
+
+
+.search-container input{
+  width: 800px;
+  height: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.search-container select{
+  border-radius: 20px;
+  width: 20px;
+  height: 10px;
+}
+.search-container button {
+  margin: 5px;
+}
+
+.now-playing__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.now-playing__cover {
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.now-playing__side {
+  text-align: center;
+}
+
+.now-playing__name {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+}
+
+.now-playing__artist {
+  margin-bottom: 1em;
+}
+
+.btn{
+  background-color: #d2f0cd;
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  border-radius: 28px;
+  border: 1px solid gray;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 19px;
+  margin: 5px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.search-results {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+}
+
+.search-results .card {
+  width: 200px;
+  background-color: #2f6627;
+  margin: 10px;
+}
+.header{
+  text-align: left;
+  background-color: #d2f0cd;
+  height: 100px;
+  position: relative;
+  top: -1px;
+  font-family: 'Playfair Display';
+    font-size: 22px;
+    font-weight: bolder;
+}
